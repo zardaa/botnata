@@ -1,20 +1,18 @@
 /*
 * JANGAN UBAH-UBAH INFO!!!
 * "JANGAN MODAL NAMA DOANG BRO!!!"
-* SCRIPT BY ARIS187 ID
+* SCRIPT BY NATABOT
 * JANGAN MODAL NAMA DOANG BOSQ
 * HARGAILAH YY MEMBUAT SCRIPT INI BOSQ
 * JANGAN UBAH-UBAH INFO!!!
-* ARIS187 ID
+* NATABOT
 * BOLEH UBAH TAPI KECUALI INFO!!!
 */
-const A187 = '👾AR15BOT👾'; // JANGAN UBAH-UBAH INFO!!!
-const instagram = 'https://instagram.com/_sadboy.ig'; // JANGAN UBAH-UBAH INFO!!!
+const ZARDA = '💀NATABOT💀'; // JANGAN UBAH-UBAH INFO!!!
+const instagram = 'https://instagram.com/ridwan._.anugrah'; // JANGAN UBAH-UBAH INFO!!!
 const nomer = 'Wa.me/+6285722553839'; // JANGAN UBAH-UBAH INFO!!!
-const aktif = 'Tergantung jaringan'; // JANGAN UBAH-UBAH INFO!!!
-const groupwhatsapp = 'https://chat.whatsapp.com/GU6NsgZvfgw37vrjIxUPhP'; // JANGAN UBAH-UBAH INFO!!!
-const youtube = 'https://www.youtube.com/channel/UCGYLWtyT9IADYNUiK0uZiGg'; // JANGAN UBAH-UBAH INFO!!!
-//A187ID
+const aktif = 'Tergantung jaringan'; // JANGAN UBAH-UBAH INFO!!!\
+//NATABOT
 const qrcode = require("qrcode-terminal");
 const moment = require("moment");
 const cheerio = require("cheerio");
@@ -28,7 +26,7 @@ const imageToBase64 = require('image-to-base64');
 const menu = require("./lib/menu.js");
 const donate = require("./lib/donate.js");
 const info = require("./lib/info.js");
-//A187ID
+//NATABOT
 const
 {
    WAConnection,
@@ -73,11 +71,11 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @_sadboy.ig`))
+conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @ridwan._.augrah`))
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @_sadboy.ig`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @ridwan._.anugrah`)
 })
 
 conn.on('message-new', async(m) =>
@@ -106,7 +104,7 @@ conn.sendMessage(group.gid, "hello everyone", MessageType.extendedText) // say h
 
 }
 
-// FFA187ID
+// FFNATABOT
 if(text.includes("#cek")){
 var num = text.replace(/#cek/ , "")
 var idn = num.replace("0","+62");
@@ -119,11 +117,11 @@ console.log(exists);
 conn.sendMessage(id ,`${gg} ${exists ? " exists " : " does not exist"} on WhatsApp`, MessageType.text)
 }
 
-//ChatA187ID
-else if (text == 'assalamualaikum'){
-conn.sendMessage(id, ' _3aalaikumsalam, _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#menu* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+//ChatNATABOT
+else if (text == 'Ass'){
+conn.sendMessage(id, ' _Waalaikumsalam, _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#menu* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
-else if (text == 'salam'){
+else if (text == 'ass'){
 conn.sendMessage(id, ' _Waalaikumsalam, Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#menu* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'asalamualaikum'){
@@ -142,13 +140,16 @@ else if (text == 'Halo'){
 conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#menu* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'Asu'){
-conn.sendMessage(id, 'Lu Asw' ,MessageType.text);
+conn.sendMessage(id, 'Lu yang asu' ,MessageType.text);
+}
+else if (text == 'asu'){
+conn.sendMessage(id, 'Lu yang asu' ,MessageType.text);
 }
 else if (text == '#owner'){
-conn.sendMessage(id, ' *Owner AR15BOT wa.me/+6285722553839* ' ,MessageType.text);
+conn.sendMessage(id, ' *Owner NATABOT wa.me/+6282397075810* ' ,MessageType.text);
 }
 else if (text == '#creator'){
-conn.sendMessage(id, ' *Creator AR15BOT wa.me/+6285722553839* ' ,MessageType.text);
+conn.sendMessage(id, ' *Creator NATABOT wa.me/+6282397075810* ' ,MessageType.text);
 }
 else if (text == 'Pagi'){
 conn.sendMessage(id, ' _Pagi juga, Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#menu* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
@@ -162,14 +163,65 @@ conn.sendMessage(id, ' _Sore juga, Iyah aku disini kak...ada yang bisa kami bant
 else if (text == 'Malam'){
 conn.sendMessage(id, ' _Malam juga, Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#menu* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
+else if (text == 'Ridwan'){
+conn.sendMessage(id, 'pacar bot nih' ,MessageType.text);
+}
+else if (text == 'Iwan'){
+conn.sendMessage(id, 'pacar bot nih' ,MessageType.text);
+}
+else if (text == 'ridwan'){
+conn.sendMessage(id, 'pacar bot nih' ,MessageType.text);
+}
+else if (text == 'iwan'){
+conn.sendMessage(id, 'pacar bot nih' ,MessageType.text);
+}
+else if (text == 'Wawan'){
+conn.sendMessage(id, 'pacar bot nih' ,MessageType.text);
+}
+else if (text == 'Wan'){
+conn.sendMessage(id, 'pacar bot nih' ,MessageType.text);
+}
+else if (text == 'wawan'){
+conn.sendMessage(id, 'pacar bot nih' ,MessageType.text);
+}
+else if (text == 'Dahlah'){
+conn.sendMessage(id, 'ciee ngambek' ,MessageType.text);
+}
+else if (text == 'Dah lah'){
+conn.sendMessage(id, 'ciee ngambek' ,MessageType.text);
+}
+else if (text == 'dahlah'){
+conn.sendMessage(id, 'ciee ngambek' ,MessageType.text);
+}
+else if (text == 'dah lah'){
+conn.sendMessage(id, 'ciee ngambek' ,MessageType.text);
+}
+else if (text == 'wan'){
+conn.sendMessage(id, 'pacar bot nih' ,MessageType.text);
+}
+else if (text == 'Goblok'){
+conn.sendMessage(id, 'sadar goblok' ,MessageType.text);
+}
+else if (text == 'goblok'){
+conn.sendMessage(id, 'sadar goblok' ,MessageType.text);
+}
 else if (text == 'Ngentod'){
-conn.sendMessage(id, 'Pengin ngentod? babi looo' ,MessageType.text);
+conn.sendMessage(id, 'Napa lu anjing? pengin ngentod?' ,MessageType.text);
 }
 else if (text == 'Anjing'){
-conn.sendMessage(id, 'Jangan toxic anjing,kntl,babi,monyet' ,MessageType.text);
+conn.sendMessage(id, 'mungkin lu yang anjing' ,MessageType.text);
 }
 else if (text == 'Bacot'){
-conn.sendMessage(id, ' *lu bacot_-* ' ,MessageType.text);
+conn.sendMessage(id, ' *Sadar goblok* ' ,MessageType.text);
+}
+else if (text == 'ngentod'){
+conn.sendMessage(id, 'Napa lu anjing? pengin ngentod?' ,MessageType.text);
+}
+else if (text == 'anjing'){
+conn.sendMessage(id, 'mungkin lu yang anjing' ,MessageType.text);
+}
+else if (text == 'bacot'){
+conn.sendMessage(id, ' *Sadar goblok* ' ,MessageType.text);
 }
 else if (text == 'Test'){
 conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#menu* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
@@ -199,10 +251,16 @@ else if (text == 'Min'){
 conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#menu* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
 }
 else if (text == 'Sayang'){
-conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#menu* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+conn.sendMessage(id, 'najis' ,MessageType.text);
 }
 else if (text == 'I love u'){
-conn.sendMessage(id, ' _love you too😻_ ' ,MessageType.text);
+conn.sendMessage(id, 'najis' ,MessageType.text);
+}
+else if (text == 'sayang'){
+conn.sendMessage(id, 'najis' ,MessageType.text);
+}
+else if (text == 'i love u'){
+conn.sendMessage(id, 'najis' ,MessageType.text);
 }
 else if (text == 'Mas'){
 conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#menu* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
@@ -218,6 +276,18 @@ conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#
 }
 else if (text == 'Euy'){
 conn.sendMessage(id, ' _Iyah aku disini kak...ada yang bisa kami bantu? Ketik *#menu* untuk melihat fitur bot kami🙏_ ' ,MessageType.text);
+}
+else if (text == 'bangsat'){
+conn.sendMessage(id, 'napa goblok' ,MessageType.text);
+}
+else if (text == 'Bangsat'){
+conn.sendMessage(id, 'napa goblok' ,MessageType.text);
+}
+else if (text == 'bangke'){
+conn.sendMessage(id, 'napa goblok' ,MessageType.text);
+}
+else if (text == 'Bangke'){
+conn.sendMessage(id, 'napa goblok' ,MessageType.text);
 }
 else if (text == 'makasi'){
 conn.sendMessage(id, ' _Sama sama, semoga harimu menyenangkan :)_ ' ,MessageType.text);
@@ -427,7 +497,7 @@ switch(bulan) {
 }
 var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, menu.menu(id, A187, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
+conn.sendMessage(id, menu.menu(id, ZARDA, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif) ,MessageType.text);
 }
 else if (text == '#donate'){
 const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
@@ -464,7 +534,7 @@ switch(bulan) {
 }
 var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, donate.donate(id, A187, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
+conn.sendMessage(id, donate.donate(id, ZARDA, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif) ,MessageType.text);
 }
 else if (text == '#donasi'){
 const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
@@ -501,7 +571,7 @@ switch(bulan) {
 }
 var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, donate.donate(id, A187, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
+conn.sendMessage(id, donate.donate(id, ZARDA, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif) ,MessageType.text);
 }
 else if (text == '#DONATE'){
 const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
@@ -538,7 +608,7 @@ switch(bulan) {
 }
 var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, donate.donate(id, A187, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
+conn.sendMessage(id, donate.donate(id, ZARDA, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif) ,MessageType.text);
 }
 else if (text == '#DONASI'){
   const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
@@ -575,7 +645,7 @@ switch(bulan) {
 }
 var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, donate.donate(id, A187, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
+conn.sendMessage(id, donate.donate(id, ZARDA, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif) ,MessageType.text);
 }
 else if (text == '#info'){
   const corohelp = await get.get('https://covid19.mathdro.id/api/countries/id').json()
@@ -612,7 +682,7 @@ switch(bulan) {
 }
 var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + tahun;
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
-conn.sendMessage(id, info.info(id, A187, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif, groupwhatsapp, youtube) ,MessageType.text);
+conn.sendMessage(id, info.info(id, ZARDA, corohelp, tampilTanggal, tampilWaktu, instagram, nomer, aktif) ,MessageType.text);
 }
 else if (text == '#foto'){
 conn.sendMessage(id, 'kirim #foto cewek/cowok\n\nContoh: #foto cewek' ,MessageType.text);
